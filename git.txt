@@ -1,0 +1,72 @@
+Git 
+
+https://www.youtube.com/watch?v=SWYqp7iY_Tc
+------------------------------------------------------------------------------
+BASIC COMMANDS
+
+$ git init           //Initialize Local Git Repository
+
+$ git help config    //To get list of codes !!!! 
+
+$ git add <file>    //Add File(s) To Index
+ 
+$ git status        //Check Status Of Working Tree
+
+$ git commit        //Commit Changes In Index
+
+$ git push          //Push To Remote Repository
+
+$ git pull          //Pull Latest From Remote Repository
+
+$ git clone         //Clone Repository Into A New Directory
+-----------------------------------------------------------------------------------
+
+
+Example Steps :- 
+
+1> set to the folder cd /....       (ie folder directory)
+---------------------------------------------------------------------------------
+2> use "git init"                     (initialize the reposotary )
+---------------------------------------------------------------------------------
+3> give a name to repository:- "git config --global user.name ' the name '  ".
+---------------------------------------------------------------------------------
+4> give email to repository :- " git config --global user.email ' email'    ".
+---------------------------------------------------------------------------------
+5> add the file in folder(ie repository):-  "  git add file_name " .
+---------------------------------------------------------------------------------
+6> to display the files in repository:- " git status  "
+---------------------------------------------------------------------------------
+7> to remove the file " git rm --cached filename  "
+---------------------------------------------------------------------------------
+8> there are different ways to add files:- 
+    git add *.filetype  (egg:- add *.txt ; this will add all the text type files )
+    
+     git add .   ( this will add all the files )
+----------------------------------------------------------------------------------- 
+NOTE:- every time a changees is made toa file , we should add the file !! 
+-----------------------------------------------------------------------------------
+9> commit :- git commit -m ' <message>'
+---------------------------------------------------------------------------------------------------------
+To ignore a perticular "file" or "folder" :
+  *> create a file ".gitignore"
+  *> mention the name of file you dont wish to add
+
+ refer  https://www.youtube.com/watch?v=SWYqp7iY_Tc :- 20:45
+--------------------------------------------------------------------------------------------------------
+Branches : - group , were work is devided . this allows people to add there code 
+              to repository without altering a main file.
+
+to create a branch > git branch 'name' (ex :- git branch login )
+
+*> to switch from "master branch" to "new beranch" :- 
+              -> git checkout nameofbranch (ex :- git checkout login )
+              Note :- touch filename (to create a new file)
+               -> rest of procedure is same.
+		-> come back to main branch
+*>Merge Master and Brancd :- 
+          	-> git merge filename (ex:- git merge login)
+----------------------------------------------------------------------------------
+Remote Repository:- 1> create a new repository on git hub website 
+		    2> copy and past the link from git hub to git cammand line 
+		    3> copy and past git push -u origin master to G C L.
+---------------------------------------------------------------------------------------
